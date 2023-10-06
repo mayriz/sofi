@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>proyecto Sofi</title>
+    <!-- Lib -->
+    <script src="./lib/p5.min.js"></script>
+    <script src="./lib/p5.dom.min.js"></script>
+    <script src="./lib/p5.sound.min.js"></script>
+    <script src="./lib/p5.play.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+    
+    <script src="./js/Game.js"></script>
+    <script src="./js/Form.js"></script>
+    <script src="./js/Player.js"></script>
+
+    <!-- Firebase SDK CODE ADD BELOW -->
+
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+
+    <script>
+const firebaseConfig = {
+  apiKey: "AIzaSyD4wpnJtqy92D9R932nurwoqnhAr59t3Bo",
+  authDomain: "autos-67e86.firebaseapp.com",
+  databaseURL: "https://autos-67e86-default-rtdb.firebaseio.com",
+  projectId: "autos-67e86",
+  storageBucket: "autos-67e86.appspot.com",
+  messagingSenderId: "1030062092333",
+  appId: "1:1030062092333:web:77708af01078244c55c8a4"
+};
+
+      // Inicia Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+   
+  </head>
+  <body>
+    
+    <script src="./sketch.js"></script>
+  </body>
+</html>
